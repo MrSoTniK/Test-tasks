@@ -118,14 +118,8 @@ namespace TestTask_1
                         userInputFirstValue = "";
                         ClearLine(1);
                     }
-                }
-                                                                         
+                }                                                            
             }
-            
-            
-
         }
-    }
-
-    
+    }    
 }
