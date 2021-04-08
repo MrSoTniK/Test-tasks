@@ -7,8 +7,7 @@ using System.Runtime.InteropServices;
 using System.IO;
 
 namespace TestTask_1
-{       
-    
+{           
     class Program
     {
         // По умолчанию комбинация клавиш ctrl+s забиндена в работе консоли по умолчанию, поэтому необходимо сменить данную настройку
@@ -62,10 +61,8 @@ namespace TestTask_1
             string userInputFirstValue = "";
             bool isSaved = false;
             List<string> userInputStrings = new List<string>();
-            ConsoleKeyInfo keyInpuInfo;
-        
+            ConsoleKeyInfo keyInpuInfo;        
                   
-
             Console.WriteLine("Enter text line and press Enter for new line. Press Ctrl + S to Save file");
 
             while (true) 
@@ -102,14 +99,12 @@ namespace TestTask_1
                     Console.WriteLine("File successfully saved. " + fileSize.ToString() + " bytes");
                     Console.SetCursorPosition(0, 1);
                     isSaved = true;
-
                 }
                 else
                 {
                     if (keyInpuInfo.Key != ConsoleKey.Enter)
                     {
                         userInputFirstValue += keyInpuInfo.KeyChar;                       
-
                     }
                     else 
                     {
