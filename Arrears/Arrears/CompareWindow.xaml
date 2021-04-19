@@ -1,0 +1,17 @@
+﻿<Window x:Class="Arrears.CompareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Arrears"
+        mc:Ignorable="d"
+        Title="Сравнение двух строк" Height="400" Width="800">
+    <Grid>
+        <Button x:Name="CompareButton" Content="Сравнить" HorizontalAlignment="Left" Margin="26,12,0,0" VerticalAlignment="Top" Width="114" Height="38" FontSize="20" Click="CompareButton_Click"/>
+        <Label Content="ID 1-ой строки" HorizontalAlignment="Left" Margin="175,10,0,0" VerticalAlignment="Top" FontSize="20" Height="40"/>
+        <Label Content="ID 2-ой строки" HorizontalAlignment="Left" Margin="451,13,0,0" VerticalAlignment="Top" FontSize="20" Height="40"/>
+        <TextBox x:Name="FirstIdTextBox" HorizontalAlignment="Left" Height="38" Margin="320,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="FirstIdTextBox_PreviewTextInput"/>
+        <TextBox x:Name="SecondIdTextBox" HorizontalAlignment="Left" Height="38" Margin="596,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="FirstIdTextBox_PreviewTextInput"/>
+        <TextBlock x:Name="TextBlockForCompare" HorizontalAlignment="Left" Margin="26,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="275" Width="690"/>
+    </Grid>
+</Window>
