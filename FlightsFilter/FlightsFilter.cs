@@ -213,5 +213,4 @@ namespace Gridnine.FlightCodingTest
             Console.WriteLine("Вылет: " + DepartureDate + " / Прилет: " + ArrivalDate);
         }
     }
-
 }
